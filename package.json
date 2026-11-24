@@ -1,11 +1,11 @@
 {
   "name": "sri-sabari-swami-hot-chips",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "node scripts/patch-onedrive.js && next dev",
     "clean": "node scripts/clean.js",
-    "build": "node scripts/patch-onedrive.js && next build && node scripts/inline-css.js",
+    "build": "next build && node scripts/inline-css.js",
     "postinstall": "node scripts/patch-onedrive.js",
     "start": "next start",
     "lint": "next lint"
