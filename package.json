@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node scripts/patch-onedrive.js && cmd /c \"if exist .next rmdir /s /q .next\" && next dev",
-    "clean": "cmd /c \"if exist .next rmdir /s /q .next\"",
-    "build": "node scripts/patch-onedrive.js && cmd /c \"if exist .next rmdir /s /q .next\" && next build && node scripts/inline-css.js",
+    "dev": "node scripts/patch-onedrive.js && next dev",
+    "clean": "node scripts/clean.js",
+    "build": "node scripts/patch-onedrive.js && next build && node scripts/inline-css.js",
     "postinstall": "node scripts/patch-onedrive.js",
     "start": "next start",
     "lint": "next lint"

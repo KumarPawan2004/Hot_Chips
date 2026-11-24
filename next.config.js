@@ -5,7 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  generateBuildId: async () => 'build',
 };
 
 module.exports = nextConfig;
