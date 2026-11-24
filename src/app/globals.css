@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FAF7F0;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #F5EFE3;
+  --border-warm: #EAE1D1;
+  --text-main: #231C16;
+  --text-muted: #6C6257;
+  --amber-gold: #D97706;
+  --amber-dark: #B45309;
+  --brand-red: #A8211D;
+  --veg-green: #15803D;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Authentic Snack Store Card Elevation */
+.snack-card {
+  background: #FFFFFF;
+  border: 1px solid #ECE3D4;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.snack-card:hover {
+  border-color: #D97706;
+  box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Category Filter Pill */
+.filter-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 0.15s ease-in-out;
+}
+.filter-pill-active {
+  background-color: #D97706;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.25);
+}
+.filter-pill-inactive {
+  background-color: #F3ECE0;
+  color: #4A3E33;
+}
+.filter-pill-inactive:hover {
+  background-color: #E8DECE;
+}
+
+/* Primary Action Buttons */
+.btn-whatsapp {
+  background-color: #16A34A;
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-whatsapp:hover {
+  background-color: #15803D;
+}
+.btn-whatsapp:active {
+  transform: scale(0.97);
+}
+
+.btn-call {
+  background-color: #FFFFFF;
+  color: #27211B;
+  border: 1px solid #D1C5B2;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-call:hover {
+  background-color: #F8F4EB;
+  border-color: #B8A890;
+}
+.btn-call:active {
+  transform: scale(0.97);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFE3;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CBB6;
+  border-radius: 3px;
+}
